@@ -7,7 +7,7 @@ with open("README.md", mode="r") as f:
     long_description = f.read()
 
 with open(
-    os.path.join(os.path.join(os.path.dirname(__file__), "Noxix-utils"), "__version__.py"),
+    os.path.join(os.path.join(os.path.dirname(__file__), "Noxix-Utils"), "__version__.py"),
     mode="r",
 ) as file:
     content = file.read()
@@ -16,7 +16,7 @@ __version__ = float(
 )
 
 setuptools.setup(
-    name="Noxix-utils",
+    name="Noxix-Utils",
     version=str(__version__),
     author="Noxix",
     author_email=None,
