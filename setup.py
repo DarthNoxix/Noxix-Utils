@@ -7,7 +7,7 @@ with open("README.md", mode="r") as f:
     long_description = f.read()
 
 with open(
-    os.path.join(os.path.join(os.path.dirname(__file__), "noxix_utils"), "__version__.py"),
+    os.path.join(os.path.join(os.path.dirname(__file__), "Noxix_Utils"), "__version__.py"),
     mode="r",
 ) as file:
     content = file.read()
@@ -16,14 +16,14 @@ __version__ = float(
 )
 
 setuptools.setup(
-    name="noxix_utils",
+    name="Noxix_Utils",
     version=str(__version__),
     author="Noxix",
     author_email=None,
     description="Utils for Noxix-cogs.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/DarthNoxix/noxix_utils",
+    url="https://github.com/DarthNoxix/Noxix_Utils",
     packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
