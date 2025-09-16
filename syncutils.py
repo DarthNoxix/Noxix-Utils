@@ -1,6 +1,3 @@
-# Thanks to @Vexed01 on GitHub for this code (https://github.com/Vexed01/Vex-Cogs)!
-# Copy the utils from https://github.com/AAA3A-AAA3A/Noxix_Utils to each cog in this repo.
-
 import datetime
 import json
 import os
@@ -16,7 +13,7 @@ if VERSION is None:
     from git import Repo
     utils_repo_clone_location = BASE_PATH / "Noxix_Utils_clone_for_sync"
     utils_repo = Repo.clone_from(
-        "https://github.com/AAA3A-AAA3A/Noxix_Utils.git", utils_repo_clone_location
+        "https://github.com/DarthNoxix/Noxix-Utils.git", utils_repo_clone_location
     )
 
     utils_location = utils_repo_clone_location / "Noxix_Utils"
@@ -25,13 +22,13 @@ if VERSION is None:
     README_MD_TEXT = """## My utils
 
     Hello there! If you're contributing or taking a look, everything in this folder
-    is synced from a master repo at https://github.com/AAA3A-AAA3A/Noxix_Utils by GitHub Actions -
+    is synced from a master repo at https://github.com/DarthNoxix/Noxix-Utils by GitHub Actions -
     so it's probably best to look/edit there.
 
     ---
 
     Last sync at: {time}
-    Commit: [`{commit}`](https://github.com/AAA3A-AAA3A/Noxix_Utils/commit/{commit})
+    Commit: [`{commit}`](https://github.com/DarthNoxix/Noxix-Utils/commit/{commit})
     """
     readme = README_MD_TEXT.format(
         time=datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%d %H:%M:%S %Z"),
